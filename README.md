@@ -4,7 +4,7 @@ this repo contains three subdirectories that show
 
 1. an error when handlebars is used with k6 & browserify
 1. an error when handlebars is used with k6 & webpack
-1. a success when nunjacks is used with k6 & webpack (based on the work done by Mihail Stoykov in https://github.com/MStoykov/k6-es6)
+1. a success when nunjucks is used with k6 & webpack (based on the work done by Mihail Stoykov in https://github.com/MStoykov/k6-es6)
 
 # handlebars with browserify
 
@@ -50,10 +50,10 @@ npm run webpack
 k6 run build/app.bundle.js
 ```
 
-# nunjacks with webpack
+# nunjucks with webpack
 
 ```
-cd nunjacks-with-webpack
+cd nunjucks-with-webpack
 npm install
 npm run webpack
 k6 run build/app.bundle.js
