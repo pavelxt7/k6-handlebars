@@ -1,12 +1,19 @@
-# k6-handlebars
+# how to use template libraries with k6
 
-this repo demonstrates an error when a javascript module is used with k6.
+this repo contains three subdirectories that show
+
+1. an error when handlebars is used with k6 & browserify
+1. an error when handlebars is used with k6 & webpack
+1. a success when nunjacks is used with k6 & webpack (based on the work done by Mihail Stoykov in https://github.com/MStoykov/k6-es6)
+
+# handlebars with browserify
 
 ## initialization
 
 clone the repo :)
 
 ```
+cd handlebars-with-browserify
 npm install -g browserify
 npm install
 ```
@@ -33,3 +40,21 @@ produces this error:
 
 - [using npm module with k6](https://docs.k6.io/docs/modules#section-npm-modules)
 - [browserify standlone](https://github.com/browserify/browserify-handbook#standalone)
+
+# handlebars with webpack
+
+```
+cd handlebars-with-webpack
+npm install
+npm run webpack
+k6 run build/app.bundle.js
+```
+
+# nunjacks with webpack
+
+```
+cd nunjacks-with-webpack
+npm install
+npm run webpack
+k6 run build/app.bundle.js
+```
