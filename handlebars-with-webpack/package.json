@@ -23,6 +23,6 @@
   "author": "Pavel X",
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^4.1.2"
+    "handlebars": "^4.7.7"
   }
 }
